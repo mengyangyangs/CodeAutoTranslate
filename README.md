@@ -36,6 +36,7 @@ mkdir frontend backend`
 2. 后端 (Backend) 设置
 a. 进入后端目录并创建虚拟环境
 `cd backend`
+
 # 创建一个名为 venv 的虚拟环境
 `python3 -m venv venv`
 
@@ -65,6 +66,7 @@ d. 配置环境变量 (关键步骤！)
 3. 前端 (Frontend) 设置
 a. 进入前端目录
 （请打开一个新的终端窗口，或者先在后端终端中运行 deactivate 退出虚拟环境）
+
 # 假设你当前在项目根目录
 `cd frontend`
 
@@ -73,16 +75,20 @@ b. 安装 Node.js 依赖
 
 4. 运行应用
 你需要同时运行两个独立的终端窗口来分别启动后端和前端服务。
+
 终端 1: 启动后端服务
-`cd path/to/code-comment-agent/backend # 导航到后端目录
-source venv/bin/activate             # 激活虚拟环境
-flask run --port=5001                # 启动 Flask 服务`
+`cd path/to/code-comment-agent/backend # 导航到后端目录`
+
+`source venv/bin/activate             # 激活虚拟环境`
+
+`flask run --port=5001                # 启动 Flask 服务`
 
 保持此终端窗口运行。
 
 终端 2: 启动前端应用
-`cd path/to/code-comment-agent/frontend # 导航到前端目录
-npm start                              # 启动 React 开发服务器`
+`cd path/to/code-comment-agent/frontend # 导航到前端目录`
+
+`npm start                              # 启动 React 开发服务器`
 
 这会自动在你的默认浏览器中打开 http://localhost:3000
 
