@@ -67,7 +67,7 @@ def generate_comment():
         }
 
         # 向 Google Gemini API 发送请求
-        response = requests.post(url, headers=headers, json=payload, timeout=120)
+        response = requests.post(url, headers=headers, json=payload, timeout=300)
         response.raise_for_status()
 
         response_data = response.json()
